@@ -560,11 +560,12 @@ class TimbooAPIClient {
 
         this.log('Tool được chia sẻ tại kênh telegram Dân Cày Airdrop (@dancayairdrop)'.green);
         
-        const nhiemvu = await this.askQuestion('Bạn có muốn làm nhiệm vụ không? (y/n): ');
-        const hoinhiemvu = nhiemvu.toLowerCase() === 'y';
+        const nhiemvu = 'y'; // Always yes
+        const hoinhiemvu = true;
 
-        const nangcap = await this.askQuestion('Bạn có muốn nâng cấp spin không? (y/n): ');
-        const hoinangcap = nangcap.toLowerCase() === 'y';
+        const nangcap = 'y'; // Always yes
+        const hoinangcap = true;
+
 
         while (true) {
             for (let i = 0; i < data.length; i++) {
